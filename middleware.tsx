@@ -9,7 +9,7 @@ export function middleware(request: NextRequest) {
   }
 
   if (cookie === "B") {
-    return NextResponse.rewrite(new URL("/variant-b", request.url));
+    return NextResponse.rewrite(new URL("/variante-b", request.url));
   }
 
   const variant = Math.random() < 0.5 ? "A" : "B";
