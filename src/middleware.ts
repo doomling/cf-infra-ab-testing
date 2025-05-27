@@ -16,7 +16,7 @@ export function middleware(request: NextRequest) {
   const response =
     variant === "A"
       ? NextResponse.next()
-      : NextResponse.rewrite(new URL("/variant-b", request.url));
+      : NextResponse.rewrite(new URL("/variante-b", request.url));
 
   console.log(variant);
 
